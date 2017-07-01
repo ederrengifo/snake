@@ -1,0 +1,35 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: #222;
+  font-family: 'Helvetica',sans-serif;
+}
+.container {
+  padding-top: 50px;
+}
+.content {
+  margin: 0 auto;
+  background: #151515;
+  width: 480px;
+  height: 560px;
+  border-radius: 6px;
+  padding-top: 40px;
+  border-top: 2px #333 solid;
+  border-bottom: 2px #000 solid;
+}
+.score {
+  color: #FFF;
+  font-size: 54px;
+  padding-top: 20px;
+}
+.instruction {
+  color: #333;
+  padding-top: 10px;
+}
+#gc {
+  border: 1px #202020 solid;
+  border-radius: 2px;
+}
