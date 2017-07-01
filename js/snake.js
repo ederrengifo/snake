@@ -11,7 +11,7 @@ gs=tc=20;
 ax=ay=15;
 xv=yv=0;
 trail=[];
-tail = 3;
+tail = 2;
 // Game function
 function game() {
   // Setting elements
@@ -37,7 +37,7 @@ function game() {
   for(var i=0;i<trail.length;i++) {
     ctx.fillRect(trail[i].x*gs,trail[i].y*gs,gs-2,gs-2);
     if(trail[i].x==px && trail[i].y==py) {
-      tail = 1
+      tail = 2
     }
   }
   // Setting snake behavior
