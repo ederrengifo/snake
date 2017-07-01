@@ -20,7 +20,7 @@ html, body {
   border-top: 2px #333 solid;
   border-bottom: 2px #000 solid;
 }
-.score {
+#score {
   color: #FFF;
   font-size: 54px;
   padding-top: 20px;

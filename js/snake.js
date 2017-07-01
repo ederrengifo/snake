@@ -4,6 +4,7 @@ window.onload=function() {
   ctx=canv.getContext("2d");
   document.addEventListener("keydown", keyPush);
   setInterval(game,1000/15);
+
 }
 // Variables
 px=py=10;
@@ -11,7 +12,9 @@ gs=tc=20;
 ax=ay=15;
 xv=yv=0;
 trail=[];
-tail = 2;
+tail = 1;
+score = 1;
+document.getElementById("score").innerHTML = score;
 // Game function
 function game() {
   // Setting elements
@@ -37,7 +40,8 @@ function game() {
   for(var i=0;i<trail.length;i++) {
     ctx.fillRect(trail[i].x*gs,trail[i].y*gs,gs-2,gs-2);
     if(trail[i].x==px && trail[i].y==py) {
-      tail = 2
+      tail = 1;
+      score = 1;
     }
   }
   // Setting snake behavior
@@ -48,6 +52,8 @@ function game() {
   // If snake hits apple, add one more in a random place
   if(ax==px && ay==py) {
     tail++;
+    score++;
+    document.getElementById("score").innerHTML = score;
     ax=Math.floor(Math.random()*tc);
     ay=Math.floor(Math.random()*tc);
   }
